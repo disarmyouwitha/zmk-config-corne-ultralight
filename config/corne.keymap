@@ -52,16 +52,16 @@ nice_view_spi: &spi0 {
 
                 default_layer { 
                         bindings = <
-   &none &ht TAB   Q &ht RBKT  W &ht LBRC  E &ht RBRC  R &ht SQT   T                &ht MINUS Y &ht AMPS U  &ht STAR I     &ht LC(F) O   &ht BSPC P    &none
-   &none &ht LC(A) A &ht LC(S) S &ht LPAR  D &ht RPAR  F &ht DQT   G                &ht UNDER H &ht EXCL J  &ht HASH K     &ht TILDE L   &ht SEMI RET  &none
-   &none &ht LC(Z) Z &ht LC(X) X &ht LC(C) C &ht LC(V) V &ht LCTRL B                &ht EQUAL N &ht AT   M  &ht DLLR COMMA &ht CARET DOT &ht BSLH FSLH &none
+   &ht ESC TAB &ht TAB   Q &ht RBKT  W &ht LBRC  E &ht RBRC  R &ht SQT   T                &ht MINUS Y &ht AMPS U  &ht STAR I     &ht LC(F) O   &ht BSPC P    &kp BSPC
+   &caps_word  &ht LC(A) A &ht LC(S) S &ht LPAR  D &ht RPAR  F &ht DQT   G                &ht UNDER H &ht EXCL J  &ht HASH K     &ht TILDE L   &ht SEMI RET  &kp RET
+   &kp LSHIFT  &ht LC(Z) Z &ht LC(X) X &ht LC(C) C &ht LC(V) V &ht LCTRL B                &ht EQUAL N &ht AT   M  &ht DLLR COMMA &ht CARET DOT &ht BSLH FSLH &kp BSLH
         &kp LCMD &mo 1 &kp BSPC                                                                         &kp SPACE &sk LSHIFT &mo 2
                         >;
                 };
 
                 numpad {
                         bindings = <
-   &none &bt BT_CLR   &none    &kp UP   &none     &none                         &kp PLUS  &kp N7 &kp N8 &kp N9 &kp BSPC &none
+   &none &bt BT_CLR   &none    &kp UP   &none     &none                         &kp PLUS  &kp N7 &kp N8 &kp N9 &kp BSPC &kp BSPC
    &none &bt BT_SEL 0 &kp LEFT &kp DOWN &kp RIGHT &none                         &kp MINUS &kp N4 &kp N5 &kp N6 &none    &none
    &none &bt BT_SEL 1 &none    &none    &kp SPACE &none                         &kp EQUAL &kp N1 &kp N2 &kp N3 &kp DOT  &none
         &to 3 &none &kp BSPC                                                           &kp SPACE &kp N0 &kp N0
@@ -70,18 +70,18 @@ nice_view_spi: &spi0 {
 
                 symbols {
                         bindings = <
-   &none &kp LBKT  &kp RBKT  &kp LBRC &kp RBRC &kp SQT                   &kp PLUS  &kp AMPS &kp STAR &none     &kp ESC         &none
-   &none &kp CARET &kp PRCNT &kp LPAR &kp RPAR &kp DQT                   &kp MINUS &kp EXCL &kp HASH &kp TILDE &kp PSCRN       &none
-   &none &kp BSLH  &kp PIPE  &kp LT   &kp GT   &kp GRAVE                 &kp EQUAL &kp AT   &kp DLLR &none     &kp LC(LA(DEL)) &none
+   &kp ESC &kp LBKT  &kp RBKT  &kp LBRC &kp RBRC &kp SQT                   &kp PLUS  &kp AMPS &kp STAR &none     &kp ESC         &none
+   &none   &kp CARET &kp PRCNT &kp LPAR &kp RPAR &kp DQT                   &kp MINUS &kp EXCL &kp HASH &kp TILDE &kp PSCRN       &none
+   &none   &kp BSLH  &kp PIPE  &kp LT   &kp GT   &kp GRAVE                 &kp EQUAL &kp AT   &kp DLLR &none     &kp LC(LA(DEL)) &none
         &kp LGUI &none &kp BSPC                                                               &kp SPACE &none &none
                         >;
                 };
 
                 gaming_layer { 
                         bindings = <
-   &none &kp Q &kp W &kp E &kp R &kp T                &kp Y &kp U  &kp I     &kp O   &ht BSPC P   &none
-   &none &kp A &kp S &kp D &kp F &kp G                &kp H &kp J  &kp K     &kp L   &ht RET SEMI &none
-   &none &kp Z &kp X &kp C &kp V &kp B                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH     &none
+   &ht ESC TAB &kp Q &kp W &kp E &kp R &kp T                &kp Y &kp U  &kp I     &kp O   &ht BSPC P   &kp BSPC
+   &caps_word  &kp A &kp S &kp D &kp F &kp G                &kp H &kp J  &kp K     &kp L   &ht RET SEMI &kp RET
+   &kp LSHIFT  &kp Z &kp X &kp C &kp V &kp B                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH     &kp BSLH
         &to 0 &none &kp BSPC                                        &kp SPACE &none &sk LSHIFT
                         >;
                 };
