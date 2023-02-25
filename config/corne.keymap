@@ -16,6 +16,13 @@ nice_view_spi: &spi0 {
 	cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 
+/ {
+  chosen {
+    zmk,matrix_transform = &default_transform;
+    //zmk,matrix_transform = &five_column_transform;
+  };
+};
+
 &sk {
         release-after-ms = <2000>;
         quick-release;
